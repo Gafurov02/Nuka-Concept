@@ -1,0 +1,956 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.header-just__content {
+    background: url(../img/just-content/bg.png) no-repeat 50% 50% / cover;
+
+    .header {
+        padding: 61px 0 0 0;
+
+        .header__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .header__right {
+                .header-nav {
+                    .header-nav__item {
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        font-family: "Kosugi Maru", sans-serif;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 26px;
+                        letter-spacing: 10%;
+                        color: white;
+
+                        text-decoration: none;
+
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .just-content {
+        padding: 77px 0 167px 0;
+
+        .just-content__top {
+            .just-content__title {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 140px;
+                font-weight: 100px;
+                color: #ffffff;
+
+                p {
+                    color: #ff4900;
+                }
+            }
+        }
+
+        .just-content__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .just-content__bottom-left {
+                .no-need {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffffff;
+                }
+
+                .price {
+                    display: block;
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 32px;
+                    color: #ffffff;
+
+                    margin: 40px 0 60px 0;
+                }
+
+                .buy {
+                    &:hover {
+                        color: #000000;
+                        background-color: #ff4900;
+                    }
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #ffffff;
+
+                    background-color: transparent;
+                    padding: 14px 45px;
+                    border: 2px solid #ff4900;
+                    cursor: pointer;
+                    transition: 0.2s linear;
+                }
+            }
+        }
+    }
+}
+
+.this-problems {
+    .this-problems__inner {
+        .problems__top {
+            .problems__suptitle {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 10%;
+                color: #ffffff;
+            }
+
+            .problems__title {
+                font-family: "Source Sans Pro", sans-serif;
+                font-weight: 700;
+                font-size: 120px;
+                line-height: 84px;
+                color: #ffffff;
+
+                margin-top: 40px;
+
+                span {
+                    color: #ff4900;
+                }
+
+                p {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .problems__bottom {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 112px;
+
+            .problems__content-item {
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                position: relative;
+                margin-left: 44px;
+
+                h3 {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 12px;
+                    color: #ff4900;
+
+                    transform: rotate(-90deg);
+                    position: absolute;
+                    left: -5px;
+                    bottom: 90px;
+                }
+
+                p {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 12px;
+                        padding-bottom: 18px;
+                        border-top: 2px solid #ffffff;
+                    }
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.unkillable {
+    padding: 236px 0 0 0;
+    background: url(../img/unkillable/bg.png) no-repeat 50% 50% / cover;
+
+    .unkillable__inner {
+        text-align: center;
+
+        .unkillable__top {
+            .unkillable__suptitle {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 10%;
+                color: #ffffff;
+            }
+
+            .unkillable__title {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 120px;
+                line-height: 84px;
+                color: #ff4900;
+
+                margin-top: 40px;
+
+                span {
+                    display: block;
+                    color: #ffffff;
+
+                    margin-top: 40px;
+                }
+            }
+        }
+
+        .unkillable__bottom {
+            margin-top: 36px;
+        }
+    }
+}
+
+.slider {
+    padding: 58px 0 88px 200px;
+
+    .slider__inner {
+        position: relative;
+
+        .slick-slider {
+            position: relative;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slider-buttons {
+            position: absolute;
+            left: 175px;
+            bottom: 0;
+
+            display: flex;
+
+            .btn {
+                background: transparent;
+                border: none;
+
+                // transform: translate(170px, -22px);
+            }
+
+            #next {
+                margin-left: 16px;
+            }
+        }
+
+        .progress {
+            display: block;
+            width: 90%;
+            height: 2px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            margin-top: 50px;
+
+            background-color: #404040;
+            background-image: linear-gradient(to-right, #ff4900 #ff4900);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+
+            transition: background-size 0.4s ease-in-out;
+        }
+
+        .slider__slide {
+            &:first-child {
+                margin-left: 0;
+            }
+
+            margin-left: 42px;
+
+            .slide__title {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 70px;
+                line-height: 56px;
+                color: #ffffff;
+            }
+
+            .slide__img {
+                margin-top: 32px;
+            }
+
+            .slide__num {
+                margin-top: 50px;
+                position: relative;
+                overflow: hidden;
+
+                p {
+                    &::before,
+                    ::after {
+                        content: "";
+                        position: absolute;
+                        width: 30px;
+                        border-top: 2px solid #ffffff;
+                        margin-top: 12px;
+                        margin-left: 32px;
+                    }
+
+                    display: inline-block;
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.eternal {
+    padding: 240px 0 0 0;
+
+    .eternal__inner {
+        .eternal__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .eternal-top__left {
+                .eternal__suptitle {
+                    font-family: "Kosugi Maru", sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 26px;
+                    letter-spacing: 10%;
+                    color: #ffffff;
+                }
+
+                .eternal__title {
+                    font-family: "Kosugi Maru", sans-serif;
+                    font-weight: 700;
+                    font-size: 120px;
+                    line-height: 84px;
+                    color: #ff4900;
+
+                    margin-top: 40px;
+
+                    span {
+                        display: block;
+                        margin-top: 30px;
+                        color: #ffffff;
+                    }
+                }
+
+                .eternal__subtitle {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffffff;
+
+                    margin-top: 80px;
+                }
+            }
+
+            .eternal-top__right {
+                margin-left: 74px;
+            }
+        }
+
+        .eternal__bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 104px;
+
+            .eternal__bottom-item {
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                position: relative;
+                margin-left: 44px;
+
+                h3 {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 12px;
+                    color: #ff4900;
+
+                    transform: rotate(-90deg);
+                    position: absolute;
+                    left: -5px;
+                    bottom: 65px;
+                }
+
+                p {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 12px;
+                        padding-bottom: 18px;
+                        border-top: 2px solid #ffffff;
+                    }
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.our-set {
+    background: url(../img/our-set/bg.png) no-repeat 50% 50% / cover;
+    padding: 240px 0 257px 0;
+
+    .our-set__top {
+        text-align: center;
+
+        .our-set__suptitle {
+            font-family: "Kosugi Maru", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 10%;
+            color: #ffffff;
+
+            text-transform: uppercase;
+        }
+
+        .our-set__title {
+            font-family: "Kosugi Maru", sans-serif;
+            font-weight: 700;
+            font-size: 120px;
+            line-height: 84px;
+            color: #ffffff;
+
+            margin-top: 48px;
+
+            span {
+                display: block;
+                color: #ff4900;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .our-set__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 95px;
+
+        .our-set-bottom__left {
+            position: relative;
+
+            .our-set__video {
+                position: relative;
+            }
+
+            .our-set__play {
+                position: absolute;
+                top: 50%;
+                left: 47%;
+            }
+        }
+
+        .our-set-bottom__right {
+            margin-left: 86px;
+
+            .our-set__text {
+                font-family: "Source Sans Pro", sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 26px;
+                color: #ffffff;
+            }
+
+            .our-set__soc {
+                margin: 80px 0 30px 0;
+
+                a {
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    font-family: "Kosugi Maru", sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 14px;
+                    letter-spacing: 4%;
+                    color: #ff4900;
+
+                    text-decoration: none;
+                    margin-left: 18px;
+                }
+            }
+
+            .our-set__hashtag {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    padding-bottom: 30px;
+                    border-top: 2px solid #ffffff;
+                }
+
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 14px;
+                letter-spacing: 4%;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.buy {
+    .buy__inner {
+        .buy__top {
+            .buy__suptitle {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 10%;
+                color: #ffffff;
+            }
+
+            .buy__title {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 120px;
+                line-height: 84px;
+                color: #ffffff;
+
+                margin-top: 41px;
+
+                span {
+                    color: #ff4900;
+                }
+            }
+        }
+
+        .buy__bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 130px;
+
+            .buy__bottom-item {
+                position: relative;
+
+                h3 {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 9px;
+                    color: #ff4900;
+
+                    transform: rotate(-90deg);
+                    position: absolute;
+                    left: -5px;
+                    bottom: 90px;
+                }
+
+                p {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 12px;
+                        padding-bottom: 14px;
+                        border-top: 2px solid #ffffff;
+                    }
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 700;
+                    font-size: 70px;
+                    line-height: 56px;
+                    color: #ffffff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.team-set {
+    background: url(../img/team/bg.png) no-repeat 50% 50% / cover;
+    padding: 241px 0;
+
+    .team {
+        padding: 0 0 230px 0;
+
+        .team__inner {
+            .team__top {
+                .team__title {
+                    font-family: "Kosugi Maru", sans-serif;
+                    font-weight: 700;
+                    font-size: 120px;
+                    line-height: 84px;
+                    color: #ffffff;
+
+                    span {
+                        color: #ff4900;
+                    }
+                }
+            }
+
+            .team__bottom {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 101px;
+
+                .team__bottom-item {
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    margin-left: 86px;
+
+                    .team__item-top {
+                        display: flex;
+
+                        .team__item-name {
+                            margin-left: 45px;
+
+                            h3 {
+                                font-family: "Kosugi Maru", sans-serif;
+                                font-weight: 700;
+                                font-size: 40px;
+                                line-height: 40px;
+                                color: #ffffff;
+                            }
+
+                            .team__item-soc {
+                                &::before {
+                                    content: "";
+                                    display: block;
+                                    width: 30px;
+                                    padding-bottom: 30px;
+                                    border-top: 2px solid #ffffff;
+                                }
+
+                                margin-top: 30px;
+
+                                a {
+                                    &:first-child {
+                                        margin-left: 0;
+                                    }
+
+                                    font-family: "Kosugi Maru", sans-serif;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 14px;
+                                    letter-spacing: 4%;
+                                    color: #ff4900;
+
+                                    margin-left: 18px;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .team__item-bottom {
+                        margin-top: 100px;
+
+                        p {
+                            font-family: "Source Sans Pro", sans-serif;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .set {
+        .set__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .set__right {
+                .set__title {
+                    font-family: "Kosugi Maru", sans-serif;
+                    font-weight: 700;
+                    font-size: 120px;
+                    line-height: 84px;
+                    color: #ffffff;
+
+                    span {
+                        display: block;
+                        color: #ff4900;
+                        margin-top: 40px;
+                    }
+                }
+
+                .price-buy {
+                    margin-top: 80px;
+
+                    .set__price {
+                        font-family: "Source Sans Pro", sans-serif;
+                        font-weight: 600;
+                        font-size: 26px;
+                        line-height: 32px;
+                        color: #ffffff;
+                    }
+
+                    .set__color {
+                        display: flex;
+                        margin-top: 40px;
+
+                        span {
+                            font-family: "Source Sans Pro", sans-serif;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #ffffff;
+
+                            margin-left: 14px;
+                        }
+
+                        .set__color-color {
+                            &:last-child {
+                                margin-left: 40px;
+                            }
+
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .set__buy {
+                        &:hover {
+                            background: #ff4900;
+                            color: #000000;
+                        }
+
+                        font-family: "Source Sans Pro", sans-serif;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #ffffff;
+
+                        background: transparent;
+                        padding: 14px 58px;
+                        border: 2px solid #ff4900;
+                        transition: 0.2s linear;
+                        cursor: pointer;
+
+                        margin-top: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.say-something {
+    padding: 0 0 200px 0;
+
+    .say-something__inner {
+        .something__top {
+            .something__suptitle {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 10%;
+                color: #ffffff;
+            }
+
+            .something__title {
+                font-family: "Kosugi Maru", sans-serif;
+                font-weight: 700;
+                font-size: 120px;
+                line-height: 84px;
+                color: #ffffff;
+
+                margin-top: 40px;
+
+                span {
+                    display: block;
+                    color: #ff4900;
+                    margin-top: 40px;
+                }
+            }
+        }
+
+        .something__bottom {
+            display: flex;
+            justify-content: space-between;
+            margin: 127px 0 0 97px;
+
+            .something__bottom-left {
+                .something__bottom-tel {
+                    font-family: "Kosugi Maru", sans-serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 32px;
+                    color: #ffffff;
+
+                    text-decoration: none;
+                }
+
+                .something__bottom-soc {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 30px;
+                        padding-bottom: 30px;
+                        border-top: 2px solid #ffffff;
+                    }
+
+                    margin-top: 50px;
+
+                    a {
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        font-family: "Kosugi Maru", sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 14%;
+                        letter-spacing: 4%;
+                        color: #ff4900;
+
+                        margin-left: 18px;
+                        text-decoration: none;
+                    }
+                }
+
+                .something__bottom-mail {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffffff;
+
+                    text-decoration: none;
+                    margin-top: 10px;
+                }
+            }
+
+            .something__bottom-right {
+                label {
+                    display: block;
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #ffffff;
+                }
+
+                input,
+                textarea {
+                    color: #ffffff;
+
+                    width: 671px;
+                    height: 45px;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #ffffff;
+                    outline: none;
+                }
+
+                .name {
+                    margin: 30px 0;
+                }
+
+                button {
+                    &:hover {
+                        background: #ff4900;
+                        color: #000000;
+                    }
+
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #ffffff;
+
+                    margin-top: 60px;
+                    background: transparent;
+                    padding: 14px 43px;
+                    border: 2px solid #ff4900;
+                    cursor: pointer;
+                    transition: 0.2s linear;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 0 0 72px 0;
+
+    .footer__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer__right {
+            .footer-nav {
+                a {
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    font-family: "Kosugi Maru", sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 26px;
+                    letter-spacing: 10%;
+                    color: #ffffff;
+
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+.header-container {
+    padding: 0 90px;
+}
+
+.container {
+    padding: 0 132px;
+}
